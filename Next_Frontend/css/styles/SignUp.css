@@ -5,3 +5,9 @@
 #footer{
     font-size: 10px;
 }
+
+#signUpBtn{
+    font-size: 10px;
+    background-color: #664d03;
+    height: 20px;
+}
