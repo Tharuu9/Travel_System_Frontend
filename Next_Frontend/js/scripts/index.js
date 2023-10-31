@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     $("#contact-form").submit(function (event) {
         event.preventDefault();
-        alert("Form submitted! We'll get in touch with you soon.");
+        alert("Form Submitted! We'll get in touch with you soon.");
     });
 
     getPackageDetails();
