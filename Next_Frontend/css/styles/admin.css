@@ -41,9 +41,9 @@ body, html {
 
 /* Add styles for the top navbar */
 .top-navbar {
-    background-color: #7974b7;
-    border-color: #6ea8fe;
-    border-radius: 10px;
+    background-color: #1d1c25;
+    /*border-color: #6ea8fe;
+    border-radius: 10px;*/
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -69,10 +69,11 @@ body, html {
 
 .logout-button button {
     background-color: #dbb434;
-    color: #fff;
+    font-family: "Script MT Bold";
+    color: #020505;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
