@@ -54,11 +54,11 @@ function getPackageDetails() {
 
                 });
             } else {
-                console.error("Invalid or empty response from the API.");
+                console.error("Oops!Invalid or empty response from the API.");
             }
         },
         error: function (xhr, status, error) {
-            console.error("Error fetching data: " + error);
+            console.error("Error fetching data..!" + error);
         }
     });
 };
@@ -211,7 +211,7 @@ $("#loginBtn").on("click", function () {
             }
         },
         error: function (xhr, status, error) {
-            console.error("Error fetching data: " + error);
+            console.error("Error fetching data..!" + error);
         }
     });
 });
@@ -279,7 +279,7 @@ $("#proceedBtn").on("click", function () {
                         makeReservation(dId, packId);
                     },
                     error: function (error) {
-                        alert("There is no available guide at this moment")
+                        alert("Oops!There is no available guide at this moment.")
                     }
                 });
             } else {
@@ -287,7 +287,7 @@ $("#proceedBtn").on("click", function () {
             }
         },
         error: function (error) {
-            alert("There is no available driver at this moment")
+            alert("Oops!There is no available driver at this moment.")
         }
     });
 
@@ -307,7 +307,7 @@ function getGuide() {
             netAmountCalculation();
         },
         error: function (error) {
-            alert("There is no available guide at this moment")
+            alert("Oops!There is no available guide at this moment.")
         }
     });
 };
