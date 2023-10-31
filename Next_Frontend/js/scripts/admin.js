@@ -91,12 +91,12 @@ $("#btnAddDriver").on("click", function () {
         processData: false,
         enctype: "multipart/form-data",
         success: function (response) {
-            alert("Driver added successfully:");
+            alert("Driver added successfully..!");
             document.getElementById('driverForm').reset();
             loadAllDriver();
         },
         error: function (error) {
-            console.error("Error adding driver:", error);
+            console.error("Oops!Error added driver.!", error);
         }
     });
 });
@@ -202,7 +202,7 @@ $("#btnUpdateDriver").click(function () {
             document.getElementById('driverForm').reset();
         },
         error: function (error) {
-            console.error("Error adding driver:", error);
+            console.error("Oops!Error updated driver..!", error);
         }
     });
     loadAllDriver();
@@ -259,7 +259,7 @@ $("#btnAddHotel").click(function () {
             document.getElementById('hotelForm').reset();
         },
         error: function (error) {
-            console.error("Error adding Hotel:", error);
+            console.error("Oops!Error added Hotel..!", error);
         }
     });
 
@@ -371,7 +371,7 @@ $("#btnDeleteHotel").click(function () {
         method: "DELETE",
         dataType: "json",
         success: function (resp) {
-            alert("Hotel Removed successfully..!");
+            alert("Hotel Deleted successfully..!");
             loadAllHotel();
             document.getElementById('hotelForm').reset();
         },
@@ -414,7 +414,7 @@ $("#btnAddTravel").click(function () {
             document.getElementById('travelForm').reset();
         },
         error: function (error) {
-            console.error("Oops!Error adding Travel..!", error);
+            console.error("Oops!Error added Travel..!", error);
         }
     });
 })
@@ -959,7 +959,7 @@ $("#btmUpdateGuide").click(function (){
         success: function (response) {
             //loadAllGuide();
             document.getElementById('guideForm').reset();
-            alert("Guide added successfully..!");
+            alert("Guide Updated successfully..!");
         },
         error: function (error) {
             console.error("Oops!Error Updated Guide..!", error);
