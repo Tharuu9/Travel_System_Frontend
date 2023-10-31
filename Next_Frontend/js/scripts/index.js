@@ -360,7 +360,7 @@ function makeReservation(driverId, packId) {
         contentType: "application/json",
         success: function (response) {
             driverUnavailable(driverId);
-            alert("Reservation successful");
+            alert("Reservation Successfully..!");
         },
         error: function (error) {
             console.error("Error:", error);
@@ -398,14 +398,14 @@ $("#updateUser").click(function (){
         data: JSON.stringify(user),
         contentType: "application/json",
         success: function (response) {
-            alert("Travel User Updated successfully:");
+            alert("User Updated successfully..!");
             loggedInUser.name=response.data.name;
             loggedInUser.address=response.data.address;
             loggedInUser.email=response.data.email;
             loggedInUser.nicOrPassportNum=response.data.nicOrPassportNum;
         },
         error: function (error) {
-            console.error("Error adding User:", error);
+            console.error("Oops!Error adding User..!", error);
         }
     });
 
