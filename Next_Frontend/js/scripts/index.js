@@ -405,7 +405,7 @@ $("#updateUser").click(function (){
             loggedInUser.nicOrPassportNum=response.data.nicOrPassportNum;
         },
         error: function (error) {
-            console.error("Oops!Error adding User..!", error);
+            console.error("Oops!Error update User..!", error);
         }
     });
 
