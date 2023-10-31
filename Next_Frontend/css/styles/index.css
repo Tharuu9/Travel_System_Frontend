@@ -22,9 +22,12 @@ body {
 }
 
 nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #062323;
+    color: #161938;
+    padding: 5px 10px;
+    font-size: medium;
+    font-style: revert;
+    font-family: "Script MT Bold";
     display: flex;
     justify-content: space-between;
     align-items: center;
