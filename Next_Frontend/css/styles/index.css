@@ -80,6 +80,14 @@ h1 {
     font-size: 2em;
 }
 
+#travel-locations{
+background-color: #948e60;
+}
+
+#packages{
+    background-color: #62b6a8;
+}
+
 .travel-locations, .packages, .contact {
     padding: 20px;
 }
