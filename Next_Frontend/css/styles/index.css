@@ -22,8 +22,8 @@ body {
 }
 
 nav {
-    background-color: #5cabab;
-    color: #161938;
+    background-color: rgb(206, 213, 203);
+    color: #232a6e;
     padding: 5px 10px;
     font-size: medium;
     font-style: revert;
