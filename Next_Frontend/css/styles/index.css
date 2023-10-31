@@ -81,11 +81,15 @@ h1 {
 }
 
 #travel-locations{
-background-color: #948e60;
+background-color: #b2aa87;
 }
 
 #packages{
-    background-color: #62b6a8;
+    background-color: #83afab;
+}
+
+#contact{
+    background-color: #8f76ad;
 }
 
 .travel-locations, .packages, .contact {
