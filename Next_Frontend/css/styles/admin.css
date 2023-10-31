@@ -17,13 +17,15 @@ body, html {
 }
 
 .nav-button {
-    background: none;
+    /*background: none;*/
     border: none;
-    color: #fff;
+    color: #091e1e;
     padding: 10px 20px;
+    border-radius:20px;
     cursor: pointer;
     outline: none;
     font-size: 16px;
+    font-family: "Arial Black";
     display: block;
     margin-bottom: 10px;
 }
@@ -39,12 +41,14 @@ body, html {
 
 /* Add styles for the top navbar */
 .top-navbar {
-    background-color: #333;
+    background-color: #7974b7;
+    border-color: #6ea8fe;
+    border-radius: 10px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 5px;
     z-index: 10 !important;
     position: fixed;
 }
@@ -64,7 +68,7 @@ body, html {
 }
 
 .logout-button button {
-    background-color: #3498db;
+    background-color: #dbb434;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -74,5 +78,5 @@ body, html {
 }
 
 .logout-button button:hover {
-    background-color: #2980b9;
+    background-color: #218454;
 }

@@ -27,5 +27,67 @@
     <button id="guideBtn" class="nav-button" onclick="showSectionOnClick('guide')">Guide</button>
 </div>
 
+<div class="main-content">
+    <div id="driver" class="section hide">
+        <div class="mb-5 mt-5">
+            <div class="container-fluid">
+                <div class="mt-md-4 mb-md-4">
+                    <h1>Drivers</h1>
+                    <div class="row ">
+                        <div class="col-4">
+                            <form id="driverForm">
+                                <div class="row mt-4">
+                                    <div class="col">
+                                        <label for="driver_name">Name</label>
+                                        <input class="form-control" id="driver_name" name="name"
+                                               placeholder="Athula Vithana"
+                                               type="text">
+                                    </div>
+                                    <div class="col">
+                                        <label for="driver_lic">Nic Number</label>
+                                        <input class="form-control" name="nic" id="driver_lic" placeholder="203473827412"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col">
+                                        <label for="driver_contact">Contact Number</label>
+                                        <input class="form-control" name="contactNum" id="driver_contact"
+                                               placeholder="0712345678"
+                                               type="text">
+                                    </div>
+                                    <div class="col">
+                                        <label for="driver_address">Address</label>
+                                        <input class="form-control" id="driver_address" name="address"
+                                               placeholder="Colombo"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <label for="driver_email">Email</label>
+                                    <input class="form-control" id="driver_email" name="email"
+                                           placeholder="contac@gamil.com"
+                                           type="text">
+                                </div>
+                                <div class="mt-4">
+                                    <label for="dr_frontPhoto">Licence Front Photo</label>
+                                    <input class="form-control" id="dr_frontPhoto"
+                                           type="file">
+                                </div>
+                                <div class="form-group row mt-4 mb-5">
+                                    <div class="col-8 btn-group">
+                                        <button class="btn btn-success" id="btnAddDriver" type="button">Add</button>
+                                        <button class="btn btn-warning" id="btnUpdateDriver" type="button">Update
+                                        </button>
+                                        <button class="btn btn-danger" id="btnDeleteDriver" type="button">Delete
+                                        </button>
+                                        <button class="btn btn-primary" id="btnClearDriver" type="button">Clear
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
 </body>
 </html>
