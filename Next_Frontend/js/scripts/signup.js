@@ -22,7 +22,7 @@ $("#signUpBtn").click(function (){
         data: JSON.stringify(user),
         contentType: "application/json",
         success: function () {
-            alert(" User SignUp Successfully!");
+            alert("User SignUp Successfully!");
             document.getElementById('signUpForm').reset();
         },
         error: function (error) {
