@@ -13,18 +13,17 @@
         <img src="assets/travel%20logo.jpeg" alt="Logo">
     </div>
     <div class="logout-button">
-        <button id="logoutButton">Logout</button>
+        <button id="logoutButton" class="btn-primary">Logout</button>
     </div>
 </div>
 
 <div class="sidebar">
-    <button id="driverBtn" class="nav-button" onclick="showSectionOnClick('driver')">Driver</button>
-    <button id="travel-packageBtn" class="nav-button" onclick="showSectionOnClick('travel-package')">Travel Package
-    </button>
-    <button id="hotelBtn" class="nav-button" onclick="showSectionOnClick('hotel')">Hotel</button>
-    <button id="vehicleBtn" class="nav-button" onclick="showSectionOnClick('vehicle')">Vehicle</button>
     <button id="userBtn" class="nav-button" onclick="showSectionOnClick('user')">User</button>
+    <button id="driverBtn" class="nav-button" onclick="showSectionOnClick('driver')">Driver</button>
+    <button id="hotelBtn" class="nav-button" onclick="showSectionOnClick('hotel')">Hotel</button>
     <button id="guideBtn" class="nav-button" onclick="showSectionOnClick('guide')">Guide</button>
+    <button id="vehicleBtn" class="nav-button" onclick="showSectionOnClick('vehicle')">Vehicle</button>
+    <button id="travel-packageBtn" class="nav-button" onclick="showSectionOnClick('travel-package')">Travel Package</button>
 </div>
 
 <div class="main-content">
@@ -153,9 +152,8 @@
                             <form id="travelForm">
                                 <div class="row mt-4">
                                     <div class="col">
-                                        <label for="tr_name">Travel Place</label>
-                                        <input class="form-control" id="tr_name" name="name" placeholder="Place"
-                                               type="text">
+                                        <label for="tr_name">Package Category</label>
+                                        <input class="form-control" id="tr_name" name="name" placeholder="Category" type="text">
                                     </div>
                                     <div class="col">
                                         <label for="travel_category">Category</label>
@@ -314,11 +312,11 @@
                                 <thead class="thead-dark">
                                 <tr class="table-primary">
                                     <th scope="col">Id</th>
-                                    <th scope="col">Travel Place</th>
+                                    <th scope="col">Package Category</th>
                                     <th scope="col">Category</th>
                                     <th scope="col">Star Rate</th>
                                     <th scope="col">Head Count</th>
-                                    <th scope="col">Remarks</th>
+                                    <th scope="col">Description</th>
                                     <th scope="col">Action</th>
                                 </tr>
                                 </thead>
@@ -395,7 +393,7 @@
                                     <div class="col">
                                         <label for="googleMapCoordinates">Star Rate</label>
                                         <input class="form-control" id="starRate"
-                                               name="starRate" placeholder="starRate"
+                                               name="StarRate" placeholder="starRate"
                                                type="number">
                                     </div>
 
@@ -598,7 +596,7 @@
                             <!--                            <label class="d-none" id="packageIdModal"></label>-->
                             <div class="text-center">
                                 <div class="card-body">
-                                    <!--                                        <h3>Package Details</h3>-->
+                                    <!--   <h3>Package Details</h3>-->
                                     <h6>Category : <span id="popcategory"></span></h6>
                                     <h6>Fuel Type : <span id="popRegFuelType"></span></h6>
                                     <h6>Transmission Type : <span id="popRegTramissionType"></span></h6>
