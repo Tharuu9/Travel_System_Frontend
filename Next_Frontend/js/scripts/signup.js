@@ -1,3 +1,4 @@
+/*
 let baseURL = "http://localhost:8080/";
 $("#signUpBtn").click(function (){
     let name = $("#fullName").val();
@@ -30,4 +31,4 @@ $("#signUpBtn").click(function (){
         }
 
     });
-})
+})*/
