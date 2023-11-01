@@ -198,7 +198,7 @@ $("#btnUpdateDriver").click(function () {
         contentType: "application/json",
         success: function (response) {
             loadAllDriver();
-            alert("Driver Updated successfully:");
+            alert("Driver Updated successfully..!");
             document.getElementById('driverForm').reset();
         },
         error: function (error) {

@@ -220,7 +220,7 @@ let hotelPrice = 0;
 let vehiclePrice = 0;
 let startDate = 0;
 let endDate = 0;
-let dayDifferent = 1;
+let dayDifferent = 0;
 let netAmount;
 let guidePrice = 0;
 let hId = 0;
