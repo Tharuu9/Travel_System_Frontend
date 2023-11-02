@@ -571,9 +571,6 @@ function saveUser(){
     });
 }
 $("#btnAddUser").click(function () {
-
-
-
 })
 
 function loadALLUser() {
