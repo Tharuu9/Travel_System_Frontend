@@ -1,3 +1,12 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    color: #ffffff;
+    background-size:100%;
+    background-image: url("../../assets/in bg.jpg");
+}
 #signup-form{
     background-color: #150305;
     border-radius: 30px;
@@ -11,3 +20,4 @@
     background-color: #664d03;
     height: 20px;
 }
+
