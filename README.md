@@ -5,8 +5,8 @@ FrontEnd for Next_Travel_Pvt_Ltd
 =======
 ## Image Previews
 
-![Logo](/assets/main img.png)
-![Logo](/assets/img 2.png)
+![main](https://github.com/Tharuu9/Travel_System_Frontend/blob/master/Next_Frontend/assets/main%20img.png)
+![frontPhoto](https://github.com/Tharuu9/Travel_System_Frontend/blob/master/Next_Frontend/assets/img%202.png)
 
 
 Developed by Tharuka Wijesekara
