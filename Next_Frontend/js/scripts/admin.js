@@ -223,7 +223,7 @@ $("#btnClearDriver").click(function (){
     document.getElementById('driverForm').reset();
 })
 
-///////// Hotel
+///////// Hotel ////////////////
 
 loadAllHotel();
 binRaw();
