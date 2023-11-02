@@ -5,11 +5,7 @@ body, html {
     overflow: hidden;
     color: #ffffff;
     background-size:100%;
-    background-image: url("../../assets/in bg.jpg");
-}
-#signup-form{
-    background-color: #150305;
-    border-radius: 30px;
+    background-image: url("../../assets/bg.jpg");
 }
 #footer{
     font-size: 10px;
