@@ -537,7 +537,7 @@ $("#btnClearTravel").click(function (){
 
 loadALLUser();
 
-$("#btnAddUser").click(function () {
+function saveUser(){
     let name = $("#Full_name").val();
     let email = $("#email").val();
     let address = $("#address").val();
@@ -554,6 +554,7 @@ $("#btnAddUser").click(function () {
         role: role,
         nicOrPassportNum: nicOrPassportNum
     }
+    console.log(user)
     $.ajax({
         type: "POST", // You might need to adjust this depending on your server's API.
         url: baseURL + "user/add_user",
@@ -568,6 +569,9 @@ $("#btnAddUser").click(function () {
             console.error("Oops!Error added User..!", error);
         }
     });
+}
+$("#btnAddUser").click(function () {
+
 
 
 })
@@ -586,6 +590,176 @@ function loadALLUser() {
 
     });
 }
+
+/*USERVALIDATION*/
+
+const nICRegEx = /^[0-9/A-z]{10,15}$/;
+const cusFullNameRegEx = /^[A-z ]{2,20}$/;
+const addressRegEx = /^[0-9/A-z. ,]{7,}$/;
+const cusSalaryRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
+const cusContactRegEx = /^[0-9]{3}[-]?[0-9]{7}$/;
+const emailRegEx=/^[a-z0-9]{3,}[@]?[a-z]{1,}[.]?[a-z]{2,}$/;
+const passwordRegEx=/^[A-z0-9]{6,}$/;
+
+function UserFormValid(){
+    var fullName = $("#Full_name").val()
+    $("#Full_name").css('border' , '2px solid green')
+    $("#lblFullName").text("")
+
+    if(cusFullNameRegEx.test(fullName)){
+        var email = $("#email").val()
+        if(emailRegEx.test(email)){
+            $("#email").css('border' , '2px solid green')
+            $("#lblEmail").text("")
+            var address = $("#address").val()
+
+            if(addressRegEx.test(address)){
+                $("#address").css('border' , '2px solid green')
+                $("#lblAddress").text("")
+                var userName = $("#userName").val()
+
+                if(userName != ""){
+                    $("#userName").css('border' , '2px solid green')
+                    $("#lblUserName").text("")
+                    var password = $("#password").val()
+                    if(passwordRegEx.test(password)){
+                        $("#password").css('border' , '2px solid green')
+                        $("#lblPassword").text("")
+                        var nic =  $("#nic").val()
+                        if(nICRegEx.test(nic)){
+                            $("#nic").css('border' , '2px solid green')
+                            $("#lblNic").text("")
+                            return true;
+                        }else {
+                            $("#nic").css('border', '2px solid red');
+                            $("#lblNic").text("Enter Password");
+                            return false;
+                        }
+                    }else{
+                        $("#password").css('border', '2px solid red');
+                        $("#lblPassword").text("Enter Password");
+                        return false;
+                    }
+                }else{
+                    $("#userName").css('border', '2px solid red');
+                    $("#lblUserName").text("Enter User Name");
+                    return false;
+                }
+            }else{
+                $("#address").css('border', '2px solid red');
+                $("#lblAddress").text("Invalid Address");
+                return false;
+            }
+        }else{
+            $("#email").css('border', '2px solid red');
+            $("#lblEmail").text("Invalid Email");
+            return false;
+        }
+    }else{
+        $("#Full_name").css('border', '2px solid red');
+        $("#lblFullName").text("Invalid Full Name");
+        return false;
+    }
+
+}
+
+function checkIfValid(){
+    var fullName = $("#Full_name").val();
+    if(cusFullNameRegEx.test(fullName)){
+         $("#email").focus();
+        var email = $("#email").val();
+        if(emailRegEx.test(email)){
+            $("#address").focus();
+            var address = $("#address").val()
+            if(addressRegEx.test(address)){
+                $("#userName").focus();
+                var userName =  $("#userName").val();
+                if(userName != " "){
+                    $("#password").focus();
+                    var password =  $("#password").val();
+                    if(passwordRegEx.test(password)){
+                        $("#nic").focus();
+                        var nic =  $("#nic").val();
+                        if(nICRegEx.test(nic)){
+
+                            saveUser();
+                            clearAll();
+                        }else{
+                            $("#nic").focus();
+                        }
+                    }else{
+                        $("#password").focus();
+                    }
+                }else{
+                    $("#userName").focus();
+                }
+            }else{
+                $("#address").focus();
+            }
+        }else{
+            $("#email").focus();
+        }
+    }else{
+        $("#Full_name").focus();
+    }
+}
+
+function clearAll() {
+    $('#Full_name,#email,#address,#userName,#password,#nic').val("");
+    $('#Full_name,#email,#address,#userName,#password,#nic').css('border', '2px solid #ced4da');
+    $('#Full_name').focus();
+    $("#btnAddUser").attr('disabled', true);
+
+    $("#lblFullName,#lblUserName,#lblAddress,#lblEmail,#lblPassword,#lblNic").text("");
+
+}
+
+$('#Full_name,#email,#address,#userName,#password,#nic').on('keydown', function (eventOb) {
+    if (eventOb.key == "Tab") {
+        eventOb.preventDefault(); // stop execution of the button
+    }
+});
+
+$('#Full_name,#email,#address,#userName,#password,#nic').on('blur', function () {
+    UserFormValid();
+});
+$("#Full_name").on('keyup', function (eventOb) {
+    setButton();
+});
+
+$("#email").on('keyup', function (eventOb) {
+    setButton();
+});
+
+$("#address").on('keyup', function (eventOb) {
+    setButton();
+});
+
+$("#userName").on('keyup', function (eventOb) {
+    setButton();
+});
+
+$("#password").on('keyup', function (eventOb) {
+    setButton();
+});
+
+$("#nic").on('keyup', function (eventOb) {
+    setButton();
+});
+
+
+function setButton() {
+    let b = UserFormValid();
+    if (b) {
+        $("#btnAddUser").attr('disabled', false);
+    } else {
+        $("#btnAddUser").attr('disabled', true);
+    }
+}
+
+$('#btnAddUser').click(function () {
+    checkIfValid();
+});
 
 var UserId;
 

@@ -72,7 +72,7 @@
                                 <div class="mt-4">
                                     <label for="dr_frontPhoto">Licence Front Photo</label>
                                     <input class="form-control" id="dr_frontPhoto"
-                                           type="file" style="font-size: 10px">
+                                           type="file">
                                 </div>
                                 <div class="form-group row mt-4 mb-5">
                                     <div class="col-8 btn-group">
@@ -126,7 +126,7 @@
                                 <h1 class="text-center" id="popUpDriverName">Travel Package Title</h1>
                                 <p class="text-center" id="popUpDriverEmail">A brief description of the package.</p>
                                 <div class="text-center">
-                                    <div class="card-body" style="font-size: 10px">
+                                    <div class="card-body">
                                         <!--                                        <h3>Package Details</h3>-->
                                         <h6>Nic : <span id="popUpDriverNic"></span></h6>
                                         <h6>Contact Number : <span id="popUpDriverContact"></span></h6>
@@ -292,7 +292,7 @@
                                             <!--     <p class="text-center" id="driverEmailOnModal">A brief description of the package.</p>-->
                                             <!--    <label class="d-none" id="packageIdModal"></label>-->
                                             <div class="text-center">
-                                                <div class="card-body" style="font-size: 10px">
+                                                <div class="card-body">
                                                     <!-- <h3>Package Details</h3>-->
                                                     <h6>Category : <span id="popUpTravelCategory"></span></h6>
                                                     <h6>StarRate : <span id="popPacakageStarRate"></span></h6>
@@ -387,6 +387,7 @@
                                            placeholder="example@email.com"
                                            type="text" style="font-size: 10px">
                                     <div class="col">
+
                                         <label for="googleMapCoordinates">Star Rate</label>
                                         <input class="form-control" id="starRate"
                                                name="StarRate" placeholder="starRate"
@@ -440,8 +441,8 @@
                             <h1 class="text-center" id="popHotelName">Travel Package Title</h1>
                             <p class="text-center" id="popHotelEmail">A brief description of the package.</p>
                             <div class="text-center">
+                                <div class="card-body">
 
-                                <div class="card-body" style="font-size: 10px">
                                     <!--                 <h3>Package Details</h3>-->
                                     <h6>Location : <span id="popHotelLoaction"></span></h6>
                                     <h6>Hotel Fee : <span id="popHotelFee"></span></h6>
@@ -586,12 +587,12 @@
                             <h5 class="modal-title">Vehicle Details</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body" style="font-size: 12px">
+                        <div class="modal-body">
                             <h1 class="text-center" id="popRegNumber">Travel Package Title</h1>
                             <p class="text-center" id="popRegBrand">A brief description of the package.</p>
                             <!--                            <label class="d-none" id="packageIdModal"></label>-->
                             <div class="text-center">
-                                <div class="card-body" style="font-size: 10px">
+                                <div class="card-body">
                                     <!--   <h3>Package Details</h3>-->
                                     <h6>Category : <span id="popcategory"></span></h6>
                                     <h6>Fuel Type : <span id="popRegFuelType"></span></h6>
@@ -608,6 +609,8 @@
         </div>
     </div>
 
+  <!--  USER ADDED-->
+
     <div id="user" class="section hide">
         <div class="mb-5 mt-5" id="userPage">
             <div class="container-fluid">
@@ -622,6 +625,11 @@
                                         <input class="form-control" id="Full_name" name="name"
                                                placeholder="Tharuu Wijesekara"
                                                type="text" style="font-size: 10px">
+
+                                        <p><small id="lblFullName" class="text-danger p1-1">
+
+                                        </small></p>
+
                                     </div>
                                     <div class="col">
                                         <label for="selctedRole">Role</label>
@@ -643,11 +651,21 @@
                                         <label for="email">Email</label>
                                         <input class="form-control" name="contactNum" id="email" placeholder="Email"
                                                type="text" style="font-size: 10px">
+
+                                        <p><small id="lblEmail" class="text-danger p1-1">
+
+                                        </small></p>
+
                                     </div>
                                     <div class="col">
                                         <label for="address">Address</label>
                                         <input class="form-control" id="address" name="address" placeholder="Address"
                                                type="text" style="font-size: 10px">
+
+                                        <p><small id="lblAddress" class="text-danger p1-1">
+
+                                        </small></p>
+
                                     </div>
                                 </div>
                                 <div class="row mt-4">
@@ -656,17 +674,32 @@
                                         <input class="form-control" name="contactNum" id="userName"
                                                placeholder="User Name"
                                                type="text" style="font-size: 10px">
+
+                                        <p><small id="lblUserName" class="text-danger p1-1">
+
+                                        </small></p>
+
                                     </div>
                                     <div class="col">
                                         <label for="password">Password</label>
                                         <input class="form-control" id="password" name="address" placeholder="Password"
                                                type="text" style="font-size: 10px">
+
+                                        <p><small id="lblPassword" class="text-danger p1-1">
+
+                                        </small></p>
+
                                     </div>
                                 </div>
                                 <div class="mt-4">
                                     <label for="nic">Nic</label>
                                     <input class="form-control" id="nic" name="email" placeholder="Nic"
                                            type="text" style="font-size: 10px">
+
+                                    <p><small id="lblNic" class="text-danger p1-1">
+
+                                    </small></p>
+
                                     <div class="col">
                                         <label for="usr_frontPhoto">Attach Photo</label>
                                         <input class="form-control" id="usr_frontPhoto"
@@ -694,13 +727,13 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body" style="font-size: 12px">
+                                        <div class="modal-body">
                                             <h1 class="text-center" id="popUpUseruserName">Travel Package Title</h1>
                                             <p class="text-center" id="popUpUserEmail">A brief description of the
                                                 package.</p>
                                             <label class="d-none" id="packageIdModal"></label>
                                             <div class="text-center">
-                                                <div class="card-body" style="font-size: 10px">
+                                                <div class="card-body">
 
                                                     <!--       <h3>Package Details</h3>-->
                                                     <h6>Full Name : <span id="popUpuserName"></span></h6>
@@ -822,7 +855,8 @@
                                             <label class="d-none" id="packageI"></label>
                                             <div class="text-center">
                                                 <div class="card-body" style="font-size: 10px">
-                                                    <!--                                        <h3>Package Details</h3>-->
+
+                                                    <!--               <h3>Package Details</h3>-->
                                                     <h6>Full Name : <span id="pgender"></span></h6>
                                                     <h6>Contact : <span id="contact"></span></h6>
                                                     <h6>Day Value : <span id="dayValue"></span></h6>

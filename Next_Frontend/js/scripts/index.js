@@ -161,6 +161,14 @@ $("#loginBtn").on("click", function () {
         password: pw
     }
 
+
+    /* USERLOGINFROMValidation*/
+
+
+
+
+///////////////////////////////////////////////////////////////////
+
     $.ajax({
         url: baseURL + "user/check",
         method: "POST",

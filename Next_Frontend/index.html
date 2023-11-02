@@ -46,6 +46,7 @@
             </div>
             <div class="modal-body">
                 <h1 class="text-center" id="resetvation">Reservation</h1>
+
 <!--                //<p class="text-center" id="reservationDescOnModal">A brief description of the package.</p>-->
 
 
@@ -98,10 +99,20 @@
             <div class="mb-3">
                 <label class="form-label" for="username">Username</label>
                 <input aria-describedby="emailHelp" class="form-control" id="username" type="email">
+
+                <p><small id="lblUserName" class="text-danger p1-1">
+
+                </small></p>
+
             </div>
             <div class="mb-3">
                 <label class="form-label" for="password">Password</label>
                 <input class="form-control" id="password" type="password">
+
+                <p><small id="lblPassword" class="text-danger p1-1">
+
+                </small></p>
+
             </div>
             <div class="mb-3 d-flex flex-row gap-3">
                 <button class="btn btn-primary col-3" id="loginBtn"
@@ -147,11 +158,12 @@
                 <label class="d-none" id="packageI"></label>
                 <div class="text-center">
                     <div class="card-body">
+
                         <!--  <h3>Package Details</h3>-->
-                        <h6>Full Name : <input placeholder="Name" id="loginName"></h6>
-                        <h6>Email : <input placeholder="email" id="loginUserEmail"></h6>
-                        <h6>Address :<input placeholder="Address" id="loginAddrres"></h6>
-                        <h6>Nic : <input placeholder="nic" id="loginNic"></h6>
+                        <h6>Full Name : <label for="loginName"></label><input placeholder="Name" id="loginName"></h6>
+                        <h6>Email : <label for="loginUserEmail"></label><input placeholder="email" id="loginUserEmail"></h6>
+                        <h6>Address :<label for="loginAddrres"></label><input placeholder="Address" id="loginAddrres"></h6>
+                        <h6>Nic : <label for="loginNic"></label><input placeholder="nic" id="loginNic"></h6>
                     </div>
                 </div>
                     <button class="btn btn-danger" id="updateUser" type="button">Update</button>
@@ -161,7 +173,7 @@
     </div>
 </div>
 <section class="travel-locations container" id="travel-locations">
-    <h2 class="sectionTitle" style="font-family: 'JetBrains Mono', 'Fira Code'; font-size: 50px; font-style: oblique; color: rgb(22,25,56)">
+    <h2 class="sectionTitle" style="font-family: 'JetBrains Mono', 'Fira Code',monospace; font-size: 50px; font-style: oblique; color: rgb(22,25,56)">
         Travel Places</h2>
     <div class="d-flex w-100 h-100 flex-column gap-3 pt-3">
         <div class="d-flex flex-row flex-nowrap align-content-center justify-content-center align-items-center gap-5 ">
@@ -276,7 +288,7 @@
                 <h5 class="modal-title" id="reservationModalLabel">Reservation Form</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body" style="font-size: 12px">
+            <div class="modal-body">
                 <h1 class="text-center" id="packageNameOnModal">Travel Package Title</h1>
                 <p class="text-center" id="packageDescOnModal">A brief description of the package.</p>
                 <div class="card">
