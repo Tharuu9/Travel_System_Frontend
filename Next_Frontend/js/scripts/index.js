@@ -162,12 +162,6 @@ $("#loginBtn").on("click", function () {
     }
 
 
-    /* USERLOGINFROMValidation*/
-
-
-
-
-///////////////////////////////////////////////////////////////////
 
     $.ajax({
         url: baseURL + "user/check",

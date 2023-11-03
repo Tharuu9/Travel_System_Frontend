@@ -2,7 +2,6 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
     color: #100303;
     background-size:100%;
     background-image: url("../../assets/bg.jpg");

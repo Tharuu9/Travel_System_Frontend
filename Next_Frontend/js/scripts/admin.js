@@ -588,6 +588,7 @@ function loadALLUser() {
     });
 }
 
+
 /*USERVALIDATION*/
 
 const nICRegEx = /^[0-9/A-z]{10,15}$/;
@@ -866,6 +867,8 @@ $("#btnDeleteUser").click(function () {
 $("btnClearUser").click(function (){
     document.getElementById('userForm').reset();
 })
+
+
 ////////Vehicle
 
 loadALLVehicle();
